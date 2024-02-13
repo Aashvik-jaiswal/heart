@@ -1,0 +1,71 @@
+body{
+
+    min-height: 100vh;
+
+    background: #0b1522;
+}
+
+.heart{
+    height:70px;
+    width:70px;
+    background:#f20044 ;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation: heart 0.6s linear infinite;
+    margin-left: 850px;
+    margin-top: 400px;
+}
+
+@keyframes heart{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+
+.heart:before{
+content: '';
+position: absolute;
+height: 70px;
+width: 70px;
+background: #f20044;
+top: -50%;
+border-radius: 50px;
+}
+
+.heart:after{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    }
+
+
+    .message{
+        color:whitesmoke;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+      
+    }
+
+    .message_box{
+     
+  margin-top: 50px;
+        text-align: center;
+    }
+
+    .message2{
+        color:#dc143c;
+        margin-right: 70px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+    }
